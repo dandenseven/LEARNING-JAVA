@@ -83,9 +83,9 @@ class HelloWorld {
 
         // logicall operators
 
-        int age = 45;
+        //int age = 45;
 
-        System.out.println(age >= 18 && age <= 40);
+        //System.out.println(age >= 18 && age <= 40);
 
         boolean isStudent = false;
         boolean isLibraryMember = true;
@@ -119,18 +119,47 @@ class HelloWorld {
          // you can aslo increment this way as well
         number ++;
 
-        char percentSign = '%';
+        // char percentSign = '%';
 
-        System.out.println(percentSign);
+        // System.out.println(percentSign);
 
         // other ways of declaring a string
 
-        String name = "Farhan Hasin Chowdhury";
+        // String name = "Farhan Hasin Chowdhury";
 
-        String name = new String("Farhan Hasin Chowdhury");
+        // String name = new String("Farhan Hasin Chowdhury");
 
-        System.out.println(name);
+        // System.out.println(name);
 
+        // String literalString1 = "abc";
+        // String literalString2 = "abc";
+
+        // String objectString1 = new String("xyz");
+        // String objectString2 = new String("xyz");
+
+        // System.out.println(literalString1 == literalString2);
+
+        // System.out.println(objectString1 == objectString2);
+
+        // String name = "Farhan Hasin Chowdhuru"; // for string it is - %s
+        // String country = "Bangladesh"; 
+        // int age = 26; // for in interger it is -%d
+        // String company = "freeCodeCamp";
+        // double gpa = 3.8; // for doubles and floats - %f
+        // char percentSign = '%'; // for characters - %c
+        // boolean amITellingTheTruth = false; // for boolenas - %b
+
+        // // this becomes to complicated
+        // //System.out.println("Hello World! I am " + name + ". I am from " + country + " and I am " + age + "years old. I work for " + company + ".");
+
+        // // we use formattedstring instead for lesss complexity
+
+        // String formattedString = String.format("My name is %s. I am from %s. I am %d years old. I work for %s. My GPA is %f. I have attended 100%c of my university classes. These are all %b claims.", name, country, age, company, gpa, percentSign, amITellingTheTruth);
+
+        // System.out.println(formattedString);
+
+
+        String 
 
 
 
