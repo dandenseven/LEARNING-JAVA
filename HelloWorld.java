@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class HelloWorld {
     public static void main(String[] args) {
     // interger types
@@ -28,29 +30,29 @@ class HelloWorld {
 
         //System.out.println(number2);
 
-        double number3 = 5.8;
-        int number4 = (int)number3;
+        // double number3 = 5.8;
+        // int number4 = (int)number3;
 
-        System.out.println(number4);
+        // System.out.println(number4);
 
-        int number1 = 12;
-        int number2 = 6;
+        // int number1 = 12;
+        // int number2 = 6;
 
         // addition
-        System.out.println(number1 + number2); // 18
+        //System.out.println(number1 + number2); // 18
 
         // subtraction
-        System.out.println(number1 - number2); // 6
-          System.out.println(number2 - number1); // 6
+        //System.out.println(number1 - number2); // 6
+         // System.out.println(number2 - number1); // 6
 
         // multiplication
-        System.out.println(number1 * number2); // 72
+       // System.out.println(number1 * number2); // 72
 
         // division
-        System.out.println(number1 / number2); // 2
+        //System.out.println(number1 / number2); // 2
 
         // remainder (modulo/modulus)
-        System.out.println(number1 % number2); // 0
+        //System.out.println(number1 % number2); // 0
 
         //int number = 12;
 
@@ -64,22 +66,22 @@ class HelloWorld {
        // System.out.println(number5);
 
        // is equal to 
-        System.out.println(number1 == number2);
+        //System.out.println(number1 == number2);
 
         // is not equal to 
-         System.out.println(number1 != number2);
+        // System.out.println(number1 != number2);
 
         // is greater than
-        System.out.println(number1 > number2);
+       // System.out.println(number1 > number2);
 
         // is less than
-        System.out.println(number1 < number2);
+        //System.out.println(number1 < number2);
 
         // is greater than or equal to
-        System.out.println(number1 >= number2);
+        //System.out.println(number1 >= number2);
 
         // is less than or equal to
-        System.out.println(number1 <= number2);
+        //System.out.println(number1 <= number2);
 
         // logicall operators
 
@@ -158,9 +160,94 @@ class HelloWorld {
 
         // System.out.println(formattedString);
 
+        //String name = "Dane Knight";
 
-        String 
+       // System.out.println(name.length());
 
+        //System.out.println(name.isEmpty());
+
+        //System.out.println(name.toUpperCase());
+        //System.out.println(name.toLowerCase());
+
+        // they wil not be the same object although they have the same string
+        String string1 = new String("abc");
+        String string2 = new String("abc");
+
+        System.out.println(string1 == string2);
+        // they will be the same because they have the same value
+        System.out.println(string1.equals(string2));
+        // checking the value regarless of the case of the string
+        System.out.println(string1.equalsIgnoreCase(string2));
+
+
+        String string = "The sky is blue";
+
+        // this change is not permanent for the string
+        // System.out.println(string.replace("blue", "red"));
+        // System.out.println(string);
+
+        // this will change value of the string
+        // String updatedString = string.replace("blue", "red");
+
+        // System.out.println(updatedString);
+
+        System.out.println(string.contains("freeCodeCamp"));
+
+        // Scanner scanner = new Scanner(System.in); // you must import java.util.scanner to use this object scanner & the System.in
+
+        // System.out.print("What is your name? ");
+        // String name = scanner.nextLine();
+        
+        // System.out.printf("Hello %s. How old are you?", name);
+        // int age = scanner.nextInt();
+
+        //double gpa = Double.parseDouble(scanner.nextLine());
+
+        // instead of using nextInt we can use which will not cause a skip in the next line
+        // in age = Integer.parseInt(scanner.nextLine());
+
+        // cleans up the input buffer when you have a nextInt because it will skip the next line 
+        // scanner.nextLine();
+
+
+
+        // System.out.printf("%d is excellent age to start programming? What language do you prefer? " , age);
+        // String language = scanner.nextLine();
+
+        // System.out.printf("%s is a verfy popular programming language.", language);
+
+        Scanner scanner = new Scanner(System.in);
+
+        // System.out.print("Enter the first number: ");
+        // double number1 = scanner.nextDouble();
+        // scanner.nextLine();
+
+        // System.out.print("Enter the second number: ");
+        // double number2 = scanner.nextDouble();
+        // scanner.nextLine();
+
+        // System.out.println("What operation do you want to perform? ");
+        // String operation = scanner.nextLine();
+
+        // if (operation.equals("sum")) {
+        //   System.out.printf("%f + %f = %f", number1, number2, number1 + number2);
+        // } else if (operation.equals("sub")) {
+        //   System.out.printf("%f + %f = %f", number1, number2, number1 - number2);
+        // } else if (operation.equals("mul")) {
+        //   System.out.printf("%f + %f = %f", number1, number2, number1 * number2);
+        // } else if (operation.equals("div")) {
+        //   if (number2 == 0) {
+        //     System.out.println("Can not divide by zero. ");
+        //   } else {
+        //   System.out.printf("%f + %f = %f", number1, number2, number1 / number2);
+        // } 
+        // } else {
+        //   System.out.printf("%s is not a supported operation.", operation);
+        // }
+
+        
+
+        scanner.close();
 
 
     }
