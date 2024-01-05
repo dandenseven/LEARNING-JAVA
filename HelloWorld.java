@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 class HelloWorld {
     public static void main(String[] args) {
@@ -23,7 +24,7 @@ class HelloWorld {
 
         char percentSymbol = '%';
 
-        System.out.println("This is the copyright symbol: " + percentSymbol);
+        System.out.println("This is the percent symbol: " + percentSymbol);
 
         //int number1 = 5;
         //double number2 = number1;
@@ -214,20 +215,7 @@ class HelloWorld {
         // System.out.printf("%d is excellent age to start programming? What language do you prefer? " , age);
         // String language = scanner.nextLine();
 
-        // System.out.printf("%s is a verfy popular programming language.", language);
-
-        Scanner scanner = new Scanner(System.in);
-
-        // System.out.print("Enter the first number: ");
-        // double number1 = scanner.nextDouble();
-        // scanner.nextLine();
-
-        // System.out.print("Enter the second number: ");
-        // double number2 = scanner.nextDouble();
-        // scanner.nextLine();
-
-        // System.out.println("What operation do you want to perform? ");
-        // String operation = scanner.nextLine();
+        // System.out.printf("%s is a verfy popular programming language.", language)
 
         // if (operation.equals("sum")) {
         //   System.out.printf("%f + %f = %f", number1, number2, number1 + number2);
@@ -245,10 +233,108 @@ class HelloWorld {
         //   System.out.printf("%s is not a supported operation.", operation);
         // }
 
+        // switch case is better and faster than if conditional statements
+        // Scanner scanner = new Scanner(System.in);
+
+        // System.out.print("Enter the first number: ");
+        // double number1 = scanner.nextDouble();
+        // scanner.nextLine();
+
+        // System.out.print("Enter the second number: ");
+        // double number2 = scanner.nextDouble();
+        // scanner.nextLine();
+
+        // System.out.println("What operation do you want to perform? ");
+        // String operation = scanner.nextLine();
+
+        // switch (operation) {
+        //   case "sum":
+        //     System.out.printf("%f + %f = %f", number1, number2, number1 + number2);
+        //     break;
+        //   case "sub":
+        //     System.out.printf("%f - %f = %f", number1, number2, number1 - number2);
+        //     break;
+        //   case "mul":
+        //     System.out.printf("%f * %f = %f", number1, number2, number1 * number2);
+        //     break;
+        //   case "div":
+        //     System.out.printf("%f / %f = %f", number1, number2, number1 / number2);
+        //     if (number2 == 0) {
+        //     System.out.println("Can not divide by zero");
+        //     } else {
+        //       System.out.printf("%f / %f = %f", number1, number2, number1 / number2);
+        //     }
+        //     break;
+        //   default:
+        //     System.out.printf("%s is not a supported operation", operation);
+
+        // }
+
+        // scanner.close();
         
 
-        scanner.close();
+        // Arrays
+        //char vowels[] = new char[5];
+       //a e i o u
+        // vowels[0] = 'a';
+        // vowels[1] = 'e';
+        // vowels[2] = 'i';
+        // vowels[3] = 'o';
+        // vowels[4] = 'u';
+
+        // define array in a single row
+
+        //char vowels[] = {'a', 'e', 'i', 'o', 'u'};
+        
+        // sort by index
+        // int startingIndex = 1;
+        // int endingIndex = 4;
+
+        //Arrays.sort(vowels, startingIndex, endingIndex);
+
+        // binary search method works with an sorted list
+        
+
+        // Arrays.sort(vowels);
+
+        // int startingIndex = 1;
+        // int endingIndex = 4;
+
+        // char key = 'o';
+
+        // // int foundItemIndex = Arrays.binarySearch(vowels, key);
+
+        // int foundItemIndex = Arrays.binarySearch(vowels, startingIndex, endingIndex, key);
+
+
+        // System.out.println(Arrays.toString(vowels));
+        // System.out.println(foundItemIndex);
+        
+      
+        //System.out.println(vowels.length);
+
+        // sort an array with Arrays.sort(vowels);
+
+        // char vowels[] = {'e', 'u', 'a', 'o', 'i'};
+
+        // using indexing to fill with x from index 1 to index 3
+        // int startingIndex = 1;
+        // int endingIndex = 4;
+
+        //Arrays.fill(vowels, 'x');  to fill an array with x
+        // Arrays.fill(vowels, startingIndex, endingIndex, 'x');
+
+        // System.out.println(Arrays.toString(vowels));
+        int numbers[] = {1, 2, 3, 4, 5};
+
+        int copyOfNumbers[] = numbers;
+        
+        System.out.println(Arrays.toString(numbers));
+        System.out.println(Arrays.toString(copyOfNumbers));
+
 
 
     }
+
+
 }
